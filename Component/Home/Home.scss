@@ -1,0 +1,176 @@
+@mixin flex() {
+	display: flex;
+	justify-content: center;
+}
+@mixin borderdiv(){
+    max-width:250px;
+    width:100%;
+    height:15px;
+    background-color:#FFDB5E ;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.main{
+    align-items:center;
+    @include flex();
+    flex-direction:column;
+}
+.header{
+    width:400px;
+    margin-top:30px;
+    font-size:60px;
+    font-weight: bold;
+    color:#4d4d4d;
+    @include flex();
+}
+.firstrow{
+    margin-top:15px;
+    margin-left:5%;
+    @include borderdiv();
+}
+.secondrow{
+    margin-top:15px;
+    margin-left:45%;
+    @include borderdiv(); 
+}
+.thirdrow{
+    margin-top:15px;
+    margin-left:80%;
+    @include borderdiv();
+}
+.dashboardSearch{
+    @include flex();
+}
+.dashboardsearchicon{
+    margin-top:10px;
+    padding-left:20px;
+    padding-right:50px;
+}
+.search{
+    display:flex;
+    flex-direction:row;
+    background-color: #f1f3f4;
+    border-radius:10px;
+    width:70%;
+}
+.textbold{
+    font-size:28px;
+    font-weight:bold;
+    margin-left:16%;
+    margin-top:1.5%;
+}
+.text{
+    font-size:18px;
+    margin-left:16%;
+}
+.imagediv{
+     @include flex();
+}
+.image{
+    width:100%;
+}
+.restraurant{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-around;
+}
+.card{
+    width:80%;
+    @include flex();
+    flex-direction:column;
+    margin-left:10%;
+    margin-bottom:10%;
+    padding-bottom:5%;
+    border-radius:25px !important;
+}
+.div{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:50px;
+}
+.restnName{
+    padding-top:10%;
+    @include flex();
+    font-size:26px;
+    font-weight:bold;
+}
+.restnAddress{
+    @include flex();
+    color:#a6a6a6;
+    font-size:20px;
+}
+.street{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    background-color:#FFEC6B !important ;
+    width:100%;
+    font-size:20px;
+    font-weight:bold;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+.Socials{
+    display:flex;
+    flex-direction:row;
+    margin-left:5%;
+    margin-bottom:2%;
+    font-size:26px;
+}
+.time{
+    margin-left:2%;
+}
+.RestImage{
+    width:100%;
+}
+.roomicon{
+    padding-right:20px;
+}
+.events{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+.Partycard{
+    border-radius:15px !important;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    background-color:#FFEC6B !important;
+    padding:20px 20px 40px 20px;
+}
+.Happyhour{
+    font-size:24px;
+    font-weight:bold;
+}
+.Happyhourtime{
+    width:70%;
+    border-radius:15px;
+    background-color:black;
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+    padding:10px 10px 10px 20px;
+}
+@media only screen and (max-width: 1024px) {
+    .restraurantdiv{
+        margin-top:160px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .restraurantdiv{
+        margin-top:30px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .restraurantdiv{
+        margin-top:30px;
+    }
+    .Partycard{
+        margin: 0px 10px 0px 10px;
+    }   
+}
